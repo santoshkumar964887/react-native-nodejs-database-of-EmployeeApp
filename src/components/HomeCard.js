@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
   },
   image: {
     borderRadius: 35,
-    margin: 2,
+    margin:3,
   },
   title: {
     paddingTop: 15,
