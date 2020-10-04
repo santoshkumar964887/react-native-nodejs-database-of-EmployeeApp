@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View,Image,FlatList,SafeAreaView} from 'react-native';
 import HomeCard from '../components/HomeCard';
+import {FAB} from 'react-native-paper'
 import Model from './Model';
 export default function Home() {
   return (
@@ -10,18 +11,32 @@ export default function Home() {
             <FlatList
             data={}
             />
-        </SafeAreaView>  
+        </SafeAreaView>  */}
       <HomeCard/>
       <HomeCard/>
       <HomeCard/>
-      <HomeCard/> */}
-      <Model/>
+      <HomeCard/> 
+      {/* <Model/> */}
+      <FAB
+    style={styles.fab}
+    
+    icon="plus"
+    onPress={() => console.log('Pressed')}
+  />
 
     </View>
   );
 }
 
 const styles = StyleSheet.create({
+  container:{
+    flex:1,
+  },
     
-  
+  fab: {
+    position: 'absolute',
+    margin: 20,
+    right: 0,
+    bottom: 0,
+  },
 });
