@@ -43,7 +43,30 @@ export default Model = () => {
         theme={themeColor}
         onChangeText={(text) => setSalary(text)}
       />
-      
+       <Button style={styles.uploadIcon}   theme={themeColor} icon="upload" mode="contained" onPress={() => setModel(true)}>
+   Upload Image
+  </Button>
+  <Modal
+  animationType="slide"
+  visible={model}
+  transparent={true}
+  onRequestClose={()=>setModel(false)}
+  >
+      <View style={styles.modelContainer}> 
+          <View style={styles.modelView}>
+      <Button style={styles.modelButton}   theme={themeColor} icon="camera" mode="contained" onPress={() => console.log('Pressed')}>
+    Camera
+  </Button>
+  <Button style={styles.modelButton}   theme={themeColor} icon="image-area" mode="contained" onPress={() => console.log('Pressed')}>
+    Gallery
+  </Button>
+  </View>
+  <Button    theme={themeColor} onPress={() => setModel(false)}>
+    Cancel
+  </Button>
+      </View>
+
+  </Modal>
 
      
     </View>

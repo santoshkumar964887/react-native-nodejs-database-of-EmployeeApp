@@ -6,16 +6,16 @@ import Model from './Model';
 export default function Home() {
   return (
     <View style={styles.container}>
-         {/* <SafeAreaView>
+         {/* {/* <SafeAreaView>
             <FlatList
             data={}
             />
-        </SafeAreaView>  */}
+        </SafeAreaView>  
       <HomeCard/>
       <HomeCard/>
       <HomeCard/>
-      <HomeCard/>
-      {/* <Model/> */}
+      <HomeCard/> */}
+      <Model/>
 
     </View>
   );
