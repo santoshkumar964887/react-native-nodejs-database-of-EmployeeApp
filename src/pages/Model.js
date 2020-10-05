@@ -46,6 +46,9 @@ export default Model = () => {
        <Button style={styles.uploadIcon}   theme={themeColor} icon="upload" mode="contained" onPress={() => setModel(true)}>
    Upload Image
   </Button>
+  <Button style={styles.uploadIcon}   theme={themeColor} icon="content-save" mode="contained" onPress={() =>console.log("santosh")}>
+  Save
+  </Button>
   <Modal
   animationType="slide"
   visible={model}
